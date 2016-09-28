@@ -1,6 +1,0 @@
-C:\Users\parsh\Desktop\C#\Lab 2\Lab 2\bin\Debug\Lab 2.exe.config
-C:\Users\parsh\Desktop\C#\Lab 2\Lab 2\bin\Debug\Lab 2.exe
-C:\Users\parsh\Desktop\C#\Lab 2\Lab 2\bin\Debug\Lab 2.pdb
-C:\Users\parsh\Desktop\C#\Lab 2\Lab 2\obj\Debug\Lab 2.csprojResolveAssemblyReference.cache
-C:\Users\parsh\Desktop\C#\Lab 2\Lab 2\obj\Debug\Lab 2.exe
-C:\Users\parsh\Desktop\C#\Lab 2\Lab 2\obj\Debug\Lab 2.pdb
