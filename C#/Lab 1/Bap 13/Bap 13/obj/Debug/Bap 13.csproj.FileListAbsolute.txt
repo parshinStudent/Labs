@@ -1,6 +1,0 @@
-C:\Users\parsh\Desktop\Домашние задание C++\Bap 13\Bap 13\bin\Debug\Bap 13.exe.config
-C:\Users\parsh\Desktop\Домашние задание C++\Bap 13\Bap 13\bin\Debug\Bap 13.exe
-C:\Users\parsh\Desktop\Домашние задание C++\Bap 13\Bap 13\bin\Debug\Bap 13.pdb
-C:\Users\parsh\Desktop\Домашние задание C++\Bap 13\Bap 13\obj\Debug\Bap 13.csprojResolveAssemblyReference.cache
-C:\Users\parsh\Desktop\Домашние задание C++\Bap 13\Bap 13\obj\Debug\Bap 13.exe
-C:\Users\parsh\Desktop\Домашние задание C++\Bap 13\Bap 13\obj\Debug\Bap 13.pdb
