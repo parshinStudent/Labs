@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab.pkg3;
 
 import java.util.*;
@@ -14,10 +9,6 @@ import java.io.*;
  * @author parsh
  */
 public class Lab3 {
-
-    /**
-     * @param args the command line arguments
-     */
     /*  
             Вариант 14
     1.Створити програму визначення, чи є задане ціле число парним числом 
@@ -41,7 +32,8 @@ public class Lab3 {
     
     public static void solution_one()
     {
-        System.out.println("Введите число");
+        System.out.println("\tЗадание 1");
+        System.out.print("Введите целое число: ");
         int number=cin.nextInt();
         System.out.println("Число до измененний "+number);
         if(number%2==0)
@@ -65,9 +57,9 @@ public class Lab3 {
                 }
                 else
                     if(counter==1)
-                    System.out.println("Число парне та однозначне. := "+(number*number));
+                    System.out.println("Число парне та однозначне. Нове число:= "+(number*number));
             else
-                      System.out.println("Число парне та имеет больше трехзнаком. := "+(number*number));  
+                      System.out.println("Число парне та имеет больше трехзнаком. Нове число:= "+(number*number));  
         }
         else
         {
@@ -77,7 +69,8 @@ public class Lab3 {
     
     public static void solution_two()
     {
-        System.out.println("Введите число от 1 до 8");
+        System.out.println("\tЗадание 2");
+        System.out.print("Введите число от 1 до 8: ");
         int number=cin.nextInt();
         switch(number) {
             case 1: number = 1;
@@ -112,7 +105,8 @@ public class Lab3 {
     
     public static void solution_three()
     {
-        System.out.println("Введите a,b,c,x");
+        System.out.println("\tЗадание 3");
+        System.out.println("Введите целые a,b,c,x: ");
         int a=cin.nextInt();
         int b=cin.nextInt();
         int c=cin.nextInt();
@@ -136,6 +130,5 @@ public class Lab3 {
                 F=x/c+c/x;
             }
         System.out.println("F:= " + F);
-    }
-    
+    }   
 }

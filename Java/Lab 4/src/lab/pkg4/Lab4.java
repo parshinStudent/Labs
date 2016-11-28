@@ -1,8 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+            Вариант 14
+     * 1. Знайти всі тризначні числа, що дорівнюють добутку своїх цифр. 
+     * 2. 50 тюльпанів потрібно розфасувати у подарункові набори по 3, 5 і 7 
+     *    квіток. Вивести на екран всі можливі варіанти букетів. 
+     *    Підрахувати їхню кількість.
+     * 3.   Напишіть програму для знаходження суми/добутку заданого ряду
+*/
 package lab.pkg4;
 
 /**
@@ -17,23 +20,18 @@ public class Lab4 {
 
     /**
      * @param args the command line arguments
-     * 1. Знайти всі тризначні числа, що дорівнюють добутку своїх цифр. 
-     * 2.50 тюльпанів потрібно розфасувати у подарункові набори по 3, 5 і 7 
-     *   квіток. Вивести на екран всі можливі варіанти букетів. 
-     *   Підрахувати їхню кількість.
-     * 3.Напишіть програму для знаходження суми/добутку заданого ряду
      */
     static Scanner cin = new Scanner(System.in);
     public static void main(String[] args) {
         // TODO code application logic here
-        //solution_one();
-        
-        //solution_two();
+        solution_one();
+        solution_two();
         solution_three();
     }
     
     public static void solution_one()
     {
+        System.out.println("\tЗадание 1");
         int count=0;
         for(int i=100; i<=999; i++)
         {
@@ -56,6 +54,7 @@ public class Lab4 {
     }
     public static void solution_two()
     {
+        System.out.println("\tЗадание 2");
         int count=0;
         int Tulips=50;
         
@@ -74,10 +73,11 @@ public class Lab4 {
     }
     public static void solution_three()
     {
+        System.out.println("\tЗадание 3");
         System.out.print("Введите n: ");
         long n = cin.nextLong();
         System.out.print("Введите a: ");
-        long a = cin.nextLong();
+        double a = cin.nextDouble();
         long answer=0;
         double d=a;
         double y=1/a;
@@ -89,17 +89,17 @@ public class Lab4 {
                 power*=i;
             }
             answer+=power;
-            
-            if(i>1)
-            {
-            d*=(a+i);
+        }
+        
+        for(int i=2; i<=n; i++)
+        {
+            d*=(a+(i-1));
             double f=i/d;
             y+=f;
-            }
+            //System.out.printf("y:= %.4f i:= %d d:= %.4f  f:= %.4f\n",y,i,d,f);
         }
+        
         System.out.println("Ответ 1: "+answer);
-        System.out.println("Ответ 2: "+y);
- 
+        System.out.printf("Ответ 2: %.4f ",y);
     }
-    
 }

@@ -1,12 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab.pkg1;
 
 /**
- *
  * @author parsh
  */
 
@@ -45,10 +39,10 @@ public class Lab1 {
     public static void input()
     {
         Scanner cin = new Scanner(System.in);
-        System.out.println("Введите a: "); a = cin.nextDouble();
-        System.out.println("Введите b: "); b = cin.nextDouble();
-        System.out.println("Введите t: "); t = cin.nextDouble();
-        System.out.println("\n");
+        System.out.print("Введите a: "); a = cin.nextDouble();
+        System.out.print("Введите b: "); b = cin.nextDouble();
+        System.out.print("Введите t: "); t = cin.nextDouble();
+        System.out.println();
     }
     
     public static void print_input()

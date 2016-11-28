@@ -1,12 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab2;
 
 /**
- *
  * @author parsh
  */
 
@@ -44,13 +38,13 @@ public class Lab2 {
        int x,y,z;
        
         do{  
-        System.out.println("Введите x: "); x = cin.nextInt();
+        System.out.print("Введите x: "); x = cin.nextInt();
         }while(x<=0);
         do{
-        System.out.println("Введите y: "); y = cin.nextInt();
+        System.out.print("Введите y: "); y = cin.nextInt();
         }while(y<=0);
         do{
-        System.out.println("Введите z: "); z = cin.nextInt();
+        System.out.print("Введите z: "); z = cin.nextInt();
         }while(z<=0);
        double o=x*y*z;
        double n=3;
@@ -61,8 +55,8 @@ public class Lab2 {
        int x,y;
        double a;
        System.out.println("\tЗадание 2");
-       System.out.println("Введите x: "); x = cin.nextInt();
-       System.out.println("Введите y: "); y = cin.nextInt();
+       System.out.print("Введите x: "); x = cin.nextInt();
+       System.out.print("Введите y: "); y = cin.nextInt();
        a=y-(x/(y*y+(x*x / (Math.abs(y)+(Math.abs(x*x*x)/3) ) ) ));
        return x;
     }
@@ -72,12 +66,11 @@ public class Lab2 {
        double all;
        int D,S;
        System.out.println("\tЗадание 3");
-       System.out.println("Введите D: "); D = cin.nextInt();
-       System.out.println("Введите S: "); S = cin.nextInt();
+       System.out.print("Введите D: "); D = cin.nextInt();
+       System.out.print("Введите S: "); S = cin.nextInt();
        double two=x+D*10;
        double three=two/S;
        all=(x+two+three)/100;
        return all;
     }
-    
 }

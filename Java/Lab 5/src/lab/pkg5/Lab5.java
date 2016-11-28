@@ -1,7 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * 1. Дано лінійний масив дійсних чисел. Знайти всі від’ємні елементи 
+ *    даного масиву та обчислити суму їх квадратів. 
+ * 2.Дано лінійний масив дійсних чисел. Обчислити різницю між найбільшим 
+ *   і найменшим елементами масиву.
+ * 3.Скільки є елементів з мінімальним значенням серед додатних? 
+ *   Замінити третій від’ємний на цю кількість. 
  */
 package lab.pkg5;
 
@@ -16,12 +19,7 @@ public class Lab5 {
 
     /**
      * @param args the command line arguments
-     * 1. Дано лінійний масив дійсних чисел. Знайти всі від’ємні елементи 
-     *    даного масиву та обчислити суму їх квадратів. 
-     * 2.Дано лінійний масив дійсних чисел. Обчислити різницю між найбільшим 
-     *   і найменшим елементами масиву.
-     * 3.Скільки є елементів з мінімальним значенням серед додатних? 
-     *   Замінити третій від’ємний на цю кількість. 
+
      */
     static Scanner cin = new Scanner(System.in);
     static Random r = new Random();
@@ -32,13 +30,49 @@ public class Lab5 {
         solution_three();
     }
     
+    public static int input_numbers()
+    {
+        System.out.print("Введите количество элементов массива: ");
+        int x;
+        try
+        {
+        x=cin.nextInt();
+        }catch(InputMismatchException e)
+        {
+            cin.next();
+            x=10;
+        }
+        return x;
+    }
+    public static void printArray(double a[])
+    {
+        int count=0;
+        for(int i=0; i<a.length; i++)
+        {
+            System.out.printf("%6.2f ",a[i]);
+            count++;
+            if(count==10&&i!=a.length-1)
+            {
+                System.out.printf("\n");
+                count=0;
+            }
+        }
+        System.out.printf("\n");
+    }
+    public static void fillArrayDouble(double a[])
+    {
+        for(int i=0; i<a.length; i++)
+                a[i]=r.nextDouble()*10-5;
+    }
+
     public static void solution_one()
     {
         System.out.println("\tЗадание 1");
-        double[] array = new double[20];
-        for(int i=0; i<20; i++)
+        double[] array = new double[input_numbers()];
+        fillArrayDouble(array);
+        printArray(array);
+        for(int i=0; i<array.length; i++)
         {
-            array[i]=r.nextDouble()*100-50;
             if(array[i]<0)
             {
                 System.out.printf("Число меньше нуля %.2f его квадрат %.2f\n", array[i],(array[i]*array[i]));
@@ -48,11 +82,12 @@ public class Lab5 {
     public static void solution_two()
     {
         System.out.println("\tЗадание 2");
-        double[] array = new double[20];
+        double[] array = new double[input_numbers()];
         double min=100,max=-100;
+        fillArrayDouble(array);
+        printArray(array);
         for(int i=0; i<array.length; i++)
         {
-            array[i]=r.nextDouble()*100-50;
             if(array[i]<min)min=array[i];
             if(array[i]>max)max=array[i];
         }
@@ -63,12 +98,12 @@ public class Lab5 {
     public static void solution_three()
     {
         System.out.println("\tЗадание 3");
-        int[] array = new int[20];
-        int min=100;
+        double[] array = new double[input_numbers()];
+        fillArrayDouble(array);
+        printArray(array);
+        double min=100;
         for(int i=0; i<array.length; i++)
         {
-            array[i]=r.nextInt()%20;
-            System.out.println(array[i]);
             if(array[i]>0 && array[i]<min)min=array[i];
         }
         if(min==100)System.out.println("В массиве нету елементов больше нуля");
@@ -79,7 +114,7 @@ public class Lab5 {
         {
             if(array[i]==min)count++;
         }
-        System.out.println("Количество минимальных значений больше нуля "+ min + " в массиве =" +count);
+        System.out.printf("Количество минимальных значений больше нуля %4.2f в массиве = %d\n",min,count);
         int counter=0;
         for(int i=0; i<array.length; i++)
         {
@@ -87,14 +122,13 @@ public class Lab5 {
                             counter++; 
                             if(counter==3)
                             {
-                                System.out.println("Меняю третий отьемный елемент массива с номером "+i+" и значением " +array[i]+" на "+min);
+                                System.out.printf("Меняю третий отьемный елемент массива с номером %d и значением %4.2f на %4.2f\n",i+1,array[i],min);
                                 array[i]=count; 
                                 break;
                             }
             }
         }
         if(counter!=3)System.out.println("В массиве меньше трех елементов меньше нуля");
-        
     }
     }
 }
