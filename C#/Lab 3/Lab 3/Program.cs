@@ -22,7 +22,6 @@ namespace Lab_2
             Console.WriteLine("Определить для своего варианта номер N области, в которой находиться ");
             Console.WriteLine("точка M(x,y) с заданными координатами. Границы области относить ");
             Console.WriteLine("к области с найбольшим номером.");
-            Console.WriteLine("В заданном варианте функция Y = X^2");
             Console.WriteLine();
         }
         static void solutionProblemOne()
@@ -62,23 +61,36 @@ namespace Lab_2
             Double y = Convert.ToDouble(Console.ReadLine());
 
             double Xc = 0, Yc = 0 , r=12;
-
-
-            if (((x - Xc) * (x - Xc) + (y - Yc) * (y - Yc)) < r * r)
+            if (((x - Xc) * (x - Xc) + (y - Yc) * (y - Yc)) >= r * r)
             {
-                Console.WriteLine("Точка принадлежит окружности");
-            }
-            else if (((x - Xc) * (x - Xc) + (y - Yc) * (y - Yc)) == r * r)
-            {
-                Console.WriteLine("Точка лежит на окружности");
+                Console.WriteLine("Точка не принадлежит окружности или лежит на окружности");
+                Console.WriteLine("Точка M(" + x + ";" + y + ")" + " принадлежит области N:= 4\n");
             }
             else
             {
-                Console.WriteLine("Точка M("+ x + ";" + y +   ")"+" принадлежит области N:= 4");
+                if (y == x * x)
+                {
+                    Console.WriteLine("Точка лежит на параболе");
+                    if (x >= 0) Console.WriteLine("Точка M(" + x + ";" + y + ")" + " принадлежит области N:= 3\n");
+                    else
+                        if (x < 0) Console.WriteLine("Точка M(" + x + ";" + y + ")" + " принадлежит области N:= 2\n");
+                }
+                else
+                if (y > x * x)
+                {
+                    Console.WriteLine("Точка лежит в параболе");
+                    Console.WriteLine("Точка M(" + x + ";" + y + ")" + " принадлежит области N:= 2\n");
+
+                }
+                else
+                {
+                    if(x<0&&y>0) Console.WriteLine("Точка M(" + x + ";" + y + ")" + " принадлежит области N:= 1\n");
+                    else
+                    Console.WriteLine("Точка M(" + x + ";" + y + ")" + " принадлежит области N:= 3\n");
+                }
+
+                Console.WriteLine("Для перехода в главное меню нажмите Enter");
             }
-
-            Console.WriteLine("Для перехода в главное меню нажмите Enter");
-
         }
         static void Main(string[] args)
         {

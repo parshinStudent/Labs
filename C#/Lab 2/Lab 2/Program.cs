@@ -44,7 +44,7 @@ namespace Lab_2
             string name = Console.ReadLine();
 
             Console.WriteLine("Результаты форматирования \nname = {0,6}, L = {1,4}",name,L);
-            Console.WriteLine(" I = {0,4}, A = {1,2:e2}, C = {2,3:e1}",I,A,C);
+            Console.WriteLine(" I = {0,4}, A = {1,2:f2}, C = {2,3:f1}",I,A,C);
             Console.WriteLine("Для выхода нажмите на Enter");
             Console.ReadLine();
 
@@ -53,25 +53,25 @@ namespace Lab_2
         {
             string s;
             double x;
-            StreamWriter f = new StreamWriter("LAB2.RES");
-            StreamReader f1 = new StreamReader("LAB2.TXT");
-            x = Convert.ToDouble(f1.ReadLine());
-            double xmax = Convert.ToDouble(f1.ReadLine());
-            f.WriteLine("Таблица значений");
-            f.WriteLine("I---------------------------------------I");
-            f.WriteLine("I       X       I    Функция            I ");
-            f.WriteLine("I---------------------------------------I");
+            StreamWriter cout = new StreamWriter("LAB2.RES");
+            StreamReader cin = new StreamReader("LAB2.TXT");
+            x = Convert.ToDouble(cin.ReadLine());
+            double xmax = Convert.ToDouble(cin.ReadLine());
+            cout.WriteLine("Таблица значений");
+            cout.WriteLine("I---------------------------------------I");
+            cout.WriteLine("I       X       I    Функция            I ");
+            cout.WriteLine("I---------------------------------------I");
             for(double i = x; i<=xmax; i+=0.5)
             {
-                double y = Math.Sqrt((1 / (2 * Math.Pow(Math.PI, Math.E)))) - i + 1;
-                f.WriteLine("I  X = {0:f2}         I    Y = {1:f4}                  I ",i,y);
+                double y = Math.Sqrt((1 / (2*Math.PI)))*Math.Exp((double)(-i+1));
+                cout.WriteLine("I  X = {0:f2}         I    Y = {1:f4}                  I ",i,y);
             }
-            f.WriteLine("I---------------------------------------I");
-            f.WriteLine("Составил < Паршин Олександр Юрьевич >");
+            cout.WriteLine("I---------------------------------------I");
+            cout.WriteLine("Составил < Паршин Олександр Юрьевич >");
             Console.WriteLine("Все завершилось с успехом");
             Console.WriteLine();
-            f.Close();
-            f1.Close();
+            cin.Close();
+            cout.Close();
 
         }
         static void Main(string[] args)

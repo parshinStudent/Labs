@@ -34,8 +34,7 @@ namespace Lab_1
             System.Double x = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите p: ");
             System.Double p = Convert.ToDouble(Console.ReadLine());
-
-            System.Double M = Math.Pow(Math.E, (-(x / p))) + (4 / 3) * Math.Asin(Math.Cos(x));
+            System.Double M = Math.Pow(Math.E, (-(x / p))) + ((4 / 3) * Math.Asin(Math.Cos(x)));
             Console.Write("M:= "); Console.WriteLine(M);
             Console.WriteLine("\nДля перехода в главное меню нажмите Enter");
             Console.ReadLine();
