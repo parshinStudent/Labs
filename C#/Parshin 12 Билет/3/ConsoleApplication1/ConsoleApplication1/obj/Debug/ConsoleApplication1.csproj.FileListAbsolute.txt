@@ -1,9 +1,0 @@
-C:\Users\parsh\Desktop\Кр\3\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-C:\Users\parsh\Desktop\Кр\3\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
-C:\Users\parsh\Desktop\Кр\3\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-C:\Users\parsh\Desktop\Кр\3\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-C:\Users\parsh\Desktop\Кр\3\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-C:\Users\parsh\Desktop\Кр\3\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
-C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Parshin 12 Билет\3\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Parshin 12 Билет\3\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Parshin 12 Билет\3\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
