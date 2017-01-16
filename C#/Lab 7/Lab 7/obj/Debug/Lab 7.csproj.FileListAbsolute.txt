@@ -1,0 +1,6 @@
+C:\Users\parsh\Desktop\C#\Lab 7\Lab 7\bin\Debug\Lab 7.exe.config
+C:\Users\parsh\Desktop\C#\Lab 7\Lab 7\bin\Debug\Lab 7.exe
+C:\Users\parsh\Desktop\C#\Lab 7\Lab 7\bin\Debug\Lab 7.pdb
+C:\Users\parsh\Desktop\C#\Lab 7\Lab 7\obj\Debug\Lab 7.csprojResolveAssemblyReference.cache
+C:\Users\parsh\Desktop\C#\Lab 7\Lab 7\obj\Debug\Lab 7.exe
+C:\Users\parsh\Desktop\C#\Lab 7\Lab 7\obj\Debug\Lab 7.pdb
