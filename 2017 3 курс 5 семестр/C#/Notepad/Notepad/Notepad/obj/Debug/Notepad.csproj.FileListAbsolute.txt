@@ -1,0 +1,11 @@
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\bin\Debug\Notepad.exe.config
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\bin\Debug\Notepad.exe
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\bin\Debug\Notepad.pdb
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\obj\Debug\Notepad.csprojResolveAssemblyReference.cache
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\obj\Debug\Notepad.blank.resources
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\obj\Debug\Notepad.Form1.resources
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.Cache
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\obj\Debug\Notepad.exe
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\obj\Debug\Notepad.pdb
+C:\Users\parsh\Desktop\C# 3 курс 1 семестр\Notepad\Notepad\Notepad\obj\Debug\Notepad.About.resources
